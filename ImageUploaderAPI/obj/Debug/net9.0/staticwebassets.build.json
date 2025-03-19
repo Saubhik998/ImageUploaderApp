@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "trS9QTAZIcm6P1WidrI8GWjlE7jiIK4uL9N4+HyDzqE=",
+  "Source": "ImageUploaderAPI",
+  "BasePath": "_content/ImageUploaderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
