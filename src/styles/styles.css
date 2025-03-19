@@ -1,0 +1,26 @@
+.app-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.upload-container {
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.uploaded-image {
+    max-width: 200px;
+    max-height: 200px;
+}
