@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# **📷 Image Uploader App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React.js & Redux** frontend with a **.NET Web API** backend that allows users to upload, view, and manage images efficiently.
 
-## Available Scripts
+## **🌟 Features**
+- 📤 **Upload Images** – Select and upload images from your device.
+- 🖼 **View Uploaded Images** – Displays all uploaded images in a gallery format.
+- 🔄 **Real-time Updates** – Automatically fetches and displays newly uploaded images.
+- 🛠 **Error Handling** – Provides fallbacks for broken images and server errors.
+- 🚀 **Optimized State Management** – Uses Redux for efficient state handling.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## **📂 Project Structure**
+```
+ImageUploaderApp/
+│── image-uploader/       # Frontend (React.js + Redux)
+│   ├── src/
+│   │   ├── components/    # UI Components (ImageList, ImageUpload)
+│   │   ├── redux/         # Redux actions, reducers, and store
+│   │   ├── styles.css     # Styling for UI components
+│   │   ├── App.js         # Main application entry
+│   │   ├── index.js       # React root file
+│   ├── public/            # Static assets (favicon, index.html)
+│   ├── package.json       # Dependencies and scripts
+│── ImageUploaderAPI/      # Backend (.NET Web API)
+│   ├── Controllers/       # API Controllers for handling requests
+│   ├── Models/            # Data models for image storage
+│   ├── Services/          # Business logic and database interactions
+│   ├── Program.cs         # Entry point for .NET backend
+│   ├── appsettings.json   # Configuration settings
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **🛠 Technologies Used**
+### **Frontend (React)**
+- ⚛️ **React.js** – Frontend framework
+- 📦 **Redux Toolkit** – State management
+- 🎨 **CSS** – Styling
+- 🔗 **Axios / Fetch API** – For API requests
 
-### `npm test`
+### **Backend (.NET Web API)**
+- ⚙️ **ASP.NET Core Web API** – Backend framework
+- 🗄 **MongoDB / SQL Server** – Database storage for images
+- ☁️ **Cloudinary / Local Storage** – Image storage (optional)
+- 🛡 **CORS & Authentication** – Security features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## **🚀 Getting Started**
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/Saubhik998/ImageUploaderApp.git
+cd ImageUploaderApp
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **2️⃣ Frontend Setup**
+```sh
+cd image-uploader
+npm install    # Install dependencies
+npm start      # Start development server
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **3️⃣ Backend Setup**
+```sh
+cd ImageUploaderAPI
+dotnet restore    # Install dependencies
+dotnet run        # Start backend server
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## **📌 API Endpoints**
+### **Image Management**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| `GET` | `/api/image` | Fetch all uploaded images |
+| `POST` | `/api/image/upload` | Upload a new image |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
